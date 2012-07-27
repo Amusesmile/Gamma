@@ -37,7 +37,7 @@ namespace arr{
 
 
 // Prototypes of functions that are both defined and used within this file
-TEM T sumSquares(const T * src, uint32_t len, uint32_t str);
+TEM T sumSquares(const T * src, uint32_t len, uint32_t str=1);
 
 
 
@@ -248,7 +248,7 @@ TEM void sortQuick(const T * src, uint32_t * indices, long beg, long end);
 TEM T sum(const T * src, uint32_t len, uint32_t str=1);
 
 /// Returns sum of values squared
-TEM inline T sumSquares(const T * src, uint32_t len, uint32_t str=1){
+TEM inline T sumSquares(const T * src, uint32_t len, uint32_t str){
 	return dot(src,src,len,str);
 }
 
